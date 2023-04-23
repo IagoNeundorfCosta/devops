@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Ops test</title>
+</head>
+
+<body> 
+    <h1>olá, qual o seu nome???</h1>
+    <input id="nome"> <br> <br>
+    <button onclick="resposta()" >enviar</button>
+    <h1 id="resposta">  </h1>
+
+    <style>
+        body{background-color: darkslategray; text-align: center; color: white;}
+    </style>
+
+    <script>
+        function resposta() {
+            let nome = document.querySelector("#nome");
+            let resposta = document.querySelector("#resposta");
+
+            resposta.innerHTML = "Dev ops é muito bom " + nome.value;
+        }
+    </script>
+    
+</body>
+</html>
